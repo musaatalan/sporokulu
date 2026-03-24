@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spor Okulu — Nasıl açılır?</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, "Segoe UI", sans-serif;
+      background: linear-gradient(160deg, #064e3b 0%, #059669 45%, #10b981 100%);
+      color: #ecfdf5;
+      padding: 2rem 1rem;
+      line-height: 1.55;
+    }
+    .card {
+      max-width: 36rem;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      backdrop-filter: blur(8px);
+    }
+    h1 { font-size: 1.35rem; margin: 0 0 0.75rem; }
+    .warn {
+      background: rgba(254, 243, 199, 0.15);
+      border-left: 4px solid #fbbf24;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    code, .url {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.95em;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.25rem;
+    }
+    .url { display: inline-block; margin: 0.25rem 0; word-break: break-all; }
+    ol { padding-left: 1.25rem; }
+    li { margin: 0.5rem 0; }
+    a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.65rem 1.2rem;
+      background: #fff;
+      color: #065f46;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+    a.btn:hover { filter: brightness(0.95); }
+    p.small { font-size: 0.85rem; opacity: 0.9; margin-top: 1.25rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Bu siteye ulaşılamıyor / Bağlantı reddedildi?</h1>
+    <p>
+      Tarayıcıda yalnızca <code>127.0.0.1</code> veya <code>localhost</code> yazarsanız bilgisayar
+      <strong>80 numaralı porta</strong> bağlanır. Spor Okulu burada çalışmaz; o yüzden
+      <strong>ERR_CONNECTION_REFUSED</strong> görürsünüz.
+    </p>
+    <div class="warn">
+      <strong>Doğru adresler</strong> (sunucular çalışırken):<br />
+      <span class="url">http://127.0.0.1:3000/giris</span><br />
+      API dokümantasyonu: <span class="url">http://127.0.0.1:8020/docs</span>
+    </div>
+    <p><strong>Kolay yol:</strong></p>
+    <ol>
+      <li><strong>BASLA.bat</strong> ile aynı klasörde olun (proje kökü: içinde <code>frontend</code> ve <code>backend</code> var).</li>
+      <li><strong>BASLA.bat</strong> dosyasına çift tıklayın.</li>
+      <li>İki siyah pencere açılır; <strong>kapatmayın</strong>. Tarayıcı, port 3000 hazır olunca açılır.</li>
+      <li>Hâlâ “bağlantı reddedildi” ise <strong>BAGLANTI-KONTROL.bat</strong> çalıştırın; <code>Web (3000): False</code> ise Web penceresindeki hatayı okuyun (Node kurulu mu, <code>npm install</code> oldu mu).</li>
+    </ol>
+    <p class="small">
+      Bu sayfa (<code>BURADAN-BASLA.html</code>) sunucu gerektirmez; sadece yönergeler içindir.
+      Asıl uygulama yine <code>BASLA.bat</code> ile çalışmalıdır.
+    </p>
+    <a class="btn" href="http://127.0.0.1:3000/giris">Sunucu açıksa girişe git</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spor Okulu</string>
+    <!-- Emulator: PC localhost = 10.0.2.2. Telefonda: PC IP veya HTTPS yayin URL. -->
+    <string name="app_url">http://10.0.2.2:3000/giris</string>
+</resources>
