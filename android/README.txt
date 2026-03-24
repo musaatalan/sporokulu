@@ -4,6 +4,13 @@ Spor Okulu - Android WebView kabugu
 Next.js web uygulamasi tek basina APK degildir; bu proje tam ekran WebView ile
 sitenizi acar.
 
+APK indir (Android Studio sart degil)
+-------------------------------------
+GitHub repo: Actions sekmesi -> "Android debug APK" is akisi -> son calismada
+"sporokulu-debug-apk" artifact -> app-debug.apk indir.
+
+Yerelde derlemek icin
+---------------------
 1) Android Studio (Hedgehog+) kurun.
 2) File -> Open -> bu "android" klasorunu secin.
 3) Gradle sync bittikten sonra: Build -> Build Bundle(s) / APK(s) -> Build APK(s)
